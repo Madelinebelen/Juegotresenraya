@@ -4,6 +4,7 @@ android:
     - build-tools-23.0.2
     - android-18
     - extra
+gradle build connectedCheck
 
 
 

@@ -1,4 +1,4 @@
 language: android
-
+sudo: false 
 
 

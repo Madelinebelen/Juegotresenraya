@@ -7,7 +7,26 @@ android:
         - build-tools-23.0.1
         - platform-tools
         - android-23
+        - android-L
+        - sys-img-x86-android-tv-l
+        - add-on
+        - extra
 before_install:
  - chmod +x gradlew
 script:
  - ./gradlew assembleDebug
+# Additional components
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - addon-google_apis-google-19
+
+    # Specify at least one system image,
+    # if you need to run emulator(s) during your tests
+    - sys-img-armeabi-v7a-android-22
+    - sys-img-x86-android-17
+licenses:
+    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
+install: ant deps

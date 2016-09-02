@@ -6,6 +6,8 @@ android:
         - platform-tools
         - android-23
         - extra
+before_install:
+ - chmod +x gradlew
 script:
  -./gradlew build connectedCheck
 mvn install -B

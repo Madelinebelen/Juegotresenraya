@@ -2,8 +2,8 @@ language: android
 sudo:"required"
 android:
   components:
-    build-tools-23.0.2
-    android-18
-    extra
+  - build-tools-23.0.2
+  - android-18
+  - extra
 before_install:
- chmod +x gradlew
+ - chmod +x gradlew

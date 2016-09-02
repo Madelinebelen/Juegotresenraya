@@ -7,5 +7,5 @@ android:
         - android-23
         - extra
 script:
- - ./gradlew assembleDebug
+ -./gradlew build connectedCheck
 mvn install -B

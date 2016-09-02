@@ -1,8 +1,12 @@
 language: android
 android:
   components:
+  - tools
+  - platform-tools
   - build-tools-23.0.2
-  - android-18
+  - android-23
   - extra
 before_install:
  - chmod +x gradlew
+script:
+ - ./gradlew build connectedCheck
